@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Kompeten</title>
+    <link rel="stylesheet" href="kompeten.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!---link buat font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="header-title">
+                <h1 style="font-weight: bold; text-align: center;">Kompeten</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main style="padding-top: 150px;">
+        <div class="ketengahin">
+            <form action="">
+                <label for="nama-siswa" class="my-2">Masukkan Nama : </label>
+                <input type="search" id="nama-siswa">
+                <br>
+                <br>
+                <label for="nilai" id="textNilai" class="my-2">Nilai : </label>
+                <br>
+                <input type="number" id="valPAIBP" placeholder="Nilai PAIBP">
+                <br>
+                <br>
+                <input type="number" id="valMTK" placeholder="Nilai MTK">
+                <br>
+                <br>
+                <input type="number" id="valPROD" placeholder="Nilai PROD">
+                <br>
+                <br>
+                <input type="number" id="valIPA" placeholder="Nilai IPA">
+                <br>
+                <br>
+                <input type="number" id="valIPS" placeholder="Nilai IPS">
+                <br>
+                <br>
+                <input type="button" value="Submit" onclick="btnSubmit()" class="btn btn-warning shadow-lg my-2 mb-5"
+                    style="letter-spacing: 1px; color: white; font-weight: bold;">
+
+            </form>
+        </div>
+
+        <div class="ketengahin">
+            <table id="table" class="table" style="border: solid 4px black; width: 90%;">
+                <tr>
+                    <th>Nama Siswa</th>
+                    <th>PAIBP</th>
+                    <th>MTK</th>
+                    <th>PROD</th>
+                    <th>IPA</th>
+                    <th>IPS</th>
+                    <th>Avg.</th>
+                    <th>Grade</th>
+                </tr>
+            </table>
+        </div>
+    </main>
+
+    <script src="kompeten.js">
+
+    </script>
+</body>
+
+</html>
